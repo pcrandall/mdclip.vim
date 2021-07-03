@@ -1,14 +1,15 @@
-if exists('g:mdclip_loaded') | finish | endif
+if exists('g:mdclip_loaded')
+   finish
+endif
+
+let g:mdclip_loaded = 1
 
 let s:save_cpo = &cpo
 set cpo&vim
 
+nmap <silent> <C-V> :call Mdclip()<cr>
+
 command! -nargs=* Mdclip call Mdclip()
-
-let &cpo = s:save_cpo
-unlet s:save_cpo
-
-let g:mdclip_loaded = 1
 
 function! Mdclip()
   let g:mdclip_tmpname = s:InputName()
@@ -34,3 +35,6 @@ function! s:InputName()
     call inputrestore()
    return name
 endfunction
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
