@@ -43,7 +43,6 @@ function! Mdclip()
         endif
     endif
 
-    command! -nargs=* Mdclip call Mdclip()
 endfunction
 
 function! s:wsl()
