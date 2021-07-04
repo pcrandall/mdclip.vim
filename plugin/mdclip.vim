@@ -60,5 +60,7 @@ function! s:getName()
     return name
 endfunction
 
+command! -nargs=* Mdclip call Mdclip()
+
 let &cpo = s:save_cpo
 unlet s:save_cpo

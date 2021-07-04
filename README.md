@@ -2,6 +2,8 @@
 
 Allows you to rename image, and automatically folds the base64 encoded image in your markdown file
 
+![demo gif](assets/demo.gif)
+
 ### mdclip Installation:
 
 First install the appropriate binary into your $PATH from
@@ -21,7 +23,7 @@ Add `Plug "pcrandall/mdclip.vim"` to your init.vim Then run `PlugInstall` comman
 
 ### Usage
 
-`:Mdclip` command in vim/nvim
+`:call Mdclip()` command in vim/nvim
 
 
 ### Mapping
