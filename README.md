@@ -23,7 +23,7 @@ Add `Plug "pcrandall/mdclip.vim"` to your init.vim Then run `PlugInstall` comman
 
 ### Usage
 
-`:call Mdclip()` command in vim/nvim
+`:Mdclip` command in vim/nvim
 
 
 ### Mapping
@@ -32,9 +32,9 @@ No default mappings you can create your own using like this
 
 **init.lua**
 
-`vim.api.nvim_set_keymap('n', 'mdc', ':call Mdclip()<CR>', {noremap = true, silent = true})`
+`vim.api.nvim_set_keymap('n', 'mdc', ':Mdclip<CR>', {noremap = true, silent = true})`
 
 **init.vim**
 
-`nnoremap <silent> mdc :call Mdclip()<CR>`
+`nnoremap <silent> mdc :Mdclip<CR>`
 
